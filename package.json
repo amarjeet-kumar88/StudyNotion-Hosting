@@ -2,6 +2,7 @@
   "name": "studynotion-client",
   "description": "This is the client side of the StudyNotion App",
   "version": "0.1.0",
+  "proxy": "http://localhost:4000",
   "private": true,
   "dependencies": {
     "@ramonak/react-progress-bar": "^5.0.3",

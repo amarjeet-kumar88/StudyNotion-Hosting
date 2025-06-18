@@ -14,7 +14,7 @@ const fileUpload = require("express-fileupload");
 const dotenv = require("dotenv");
 
 // Setting up port number
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 5001;
 
 // Loading environment variables from .env file
 dotenv.config();
@@ -27,7 +27,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
 	cors({
-		origin: "*",
+		origin: "http://localhost:3000",
 		credentials: true,
 	})
 );

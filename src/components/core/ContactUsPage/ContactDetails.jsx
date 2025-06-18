@@ -15,13 +15,13 @@ const contactDetails = [
     heading: "Visit us",
     description: "Come and say hello at our office HQ.",
     details:
-      "Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016",
+      "mahamda, Barbigha Sheikhpura-811105 (Bihar)",
   },
   {
     icon: "IoCall",
     heading: "Call us",
     description: "Mon - Fri From 8am to 5pm",
-    details: "+123 456 7869",
+    details: "+91 8825168422",
   },
 ]
 
@@ -44,8 +44,12 @@ const ContactDetails = () => {
             <p className="font-medium">{ele?.description}</p>
             <p className="font-semibold">{ele?.details}</p>
           </div>
+
         )
       })}
+      <div className="border items-center ">
+      <a href="http://localhost:8501/">Chat with AI-Bot</a>
+      </div>
     </div>
   )
 }
