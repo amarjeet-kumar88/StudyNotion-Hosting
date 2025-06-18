@@ -26,10 +26,13 @@ database.connect();
 app.use(express.json());
 app.use(cookieParser());
 app.use(
-  cors({
-    origin: "https://studynotion-frontend-puce.vercel.app", // ✅ Correct
-    credentials: true,
-  })
+	cors({
+		origin: [
+			"https://studynotion-frontend-puce.vercel.app",
+			"http://localhost:3000"
+		],
+		credentials: true,
+	})
 );
 app.use(
 	fileUpload({
